@@ -1,7 +1,7 @@
 const moment = require('moment-jalaali');
 const events = require('./events.json');
 const { toHijri } = require('hijri-converter');
-moment.fn.is_holiday = function() {
+moment.fn.isHoliday = function() {
   let isHoliday = false;
   let hijriDate = toHijri(this.year(), this.month() + 1, this.date());
   events.PersianCalendar.forEach(day => {
