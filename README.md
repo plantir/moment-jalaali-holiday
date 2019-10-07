@@ -10,7 +10,7 @@ A [Moment.js](https://github.com/moment/moment) plugin for handling holidays.
 - [Installation](#installation)
   - [Node.js](#nodejs)
 - [Functions](#functions)
-  - [isHoliday](#isholiday)
+  - [isHoliday](#use)
 - [License](#license)
 
 ## Requirements
