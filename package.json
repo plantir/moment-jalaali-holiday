@@ -1,0 +1,13 @@
+{
+  "name": "moment-jalaali-holiday",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node test.js"
+  },
+  "dependencies": {
+    "hijri-converter": "^1.1.1",
+    "moment-jalaali": "^0.8.3"
+  }
+}
