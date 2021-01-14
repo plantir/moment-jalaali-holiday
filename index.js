@@ -5,7 +5,7 @@ moment.fn.isHoliday = function () {
   let isHoliday = false;
   let hijriDate = momentHijri(this)
   events.PersianCalendar.forEach((day) => {
-    if (day.day === this.jDate() && day.month === this.jMonth()) {
+    if (day.day === this.jDate() && day.month === this.jMonth()+1) {
       isHoliday = day.holiday ? true : isHoliday;
     }
   });
