@@ -1,16 +1,16 @@
-const moment = require('moment-jalaali');
-const events = require('./events.json');
-const { toHijri } = require('hijri-converter');
-moment.fn.isHoliday = function() {
+const moment = require("moment-jalaali");
+const momentHijri = require("moment-hijri");
+const events = require("./events.json");
+moment.fn.isHoliday = function () {
   let isHoliday = false;
-  let hijriDate = toHijri(this.year(), this.month() + 1, this.date());
-  events.PersianCalendar.forEach(day => {
+  let hijriDate = momentHijri(this)
+  events.PersianCalendar.forEach((day) => {
     if (day.day === this.jDate() && day.month === this.jMonth()) {
       isHoliday = day.holiday ? true : isHoliday;
     }
   });
-  events.HijriCalendar.forEach(day => {
-    if (day.day === hijriDate.hd && day.month === hijriDate.hm) {
+  events.HijriCalendar.forEach((day) => {
+    if (day.day === hijriDate.iDate() && day.month === hijriDate.iMonth()+1) {
       isHoliday = day.holiday ? true : isHoliday;
     }
   });

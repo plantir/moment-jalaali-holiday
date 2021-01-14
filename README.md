@@ -29,7 +29,7 @@ yarn add moment-jalaali-holiday
 
 ```javascript
 var moment = require('moment-jalaali-holiday');
-moment().isHoliday('1398/07/27', 'jYYYY/jMM/jDD');
+moment('1398/07/27', 'jYYYY/jMM/jDD').isHoliday();
 ```
 
 #### Use
@@ -37,19 +37,19 @@ moment().isHoliday('1398/07/27', 'jYYYY/jMM/jDD');
 ```javascript
 moment().isHoliday();
 //or
-moment().isHoliday('1398/07/27', 'jYYYY/jMM/jDD');
+moment('1398/07/27', 'jYYYY/jMM/jDD').isHoliday();
 ```
 
 #### Examples
 
 ```javascript
-moment().isHoliday('1398/07/27', 'jYYYY/jMM/jDD');
+moment('1398/07/27', 'jYYYY/jMM/jDD').isHoliday();
 // true
 
-moment().isHoliday('1398/01/13', 'jYYYY/jMM/jDD');
+moment('1398/01/13', 'jYYYY/jMM/jDD').isHoliday();
 // true
 
-moment().isHoliday('1398/01/15', 'jYYYY/jMM/jDD');
+moment('1398/01/15', 'jYYYY/jMM/jDD').isHoliday();
 // false
 ```
 

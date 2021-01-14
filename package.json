@@ -8,7 +8,7 @@
     "start": "node test.js"
   },
   "dependencies": {
-    "hijri-converter": "^1.1.1",
+    "moment-hijri": "^2.1.2",
     "moment-jalaali": "^0.8.3"
   }
 }
