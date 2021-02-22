@@ -577,6 +577,9 @@
       { "holiday": true, "month": 12, "day": 29, "type": "Iran",
         "title": "روز ملی شدن صنعت نفت ایران (۱۳۲۹ ه‍.ش)" },
   
+      { "holiday": true, "month": 12, "day": 30, "type": "Iran",
+        "title": "آخرین روز سال" },
+  
       { "holiday": false, "month": 1, "day": 10, "type": "Iran",
         "title": "همه‌پرسی تغییر نظام شاهنشاهی به جمهوری اسلامی ایران (۱۳۵۸ ه‍.ش)" },
   
