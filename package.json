@@ -5,7 +5,8 @@
   "license": "MIT",
   "repository": "https://github.com/vrwebdesign/moment-jalaali-holiday.git",
   "scripts": {
-    "start": "node test.js"
+    "start": "node test.js",
+    "release":"git push origin master && yarn publish"
   },
   "dependencies": {
     "moment-hijri": "^2.1.2",
