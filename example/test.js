@@ -1,3 +1,3 @@
 const moment = require('../index');
-let now = moment('1399/08/4', 'jYYYY/jMM/jDD').isHoliday();
+let now = moment('1401/12/17', 'jYYYY/jMM/jDD').isHoliday();
 console.log(now);
